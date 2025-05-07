@@ -24,4 +24,4 @@ Trained a decision tree using scikit-learn, converted it using micromlgen.
 - Upgrade to voice input in future version
 
 ## Video Demo
-[Link or embed here]
+[Click here to Video Demo](https://github.com/prunus77/TECHIN515-HW-Sw-Lab2/blob/main/Lab%203/Assets/Sorting%20hat%20video%20.mp4)
