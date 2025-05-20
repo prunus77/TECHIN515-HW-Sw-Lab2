@@ -1,27 +1,82 @@
-# ESP32 Sorting Hat
+# TECHIN 515 - Hardware and Software Lab 2
 
-A magical hat built using ESP32 and machine learning to sort you into your Hogwarts house!
+This repository contains the lab assignments for TECHIN 515 Hardware and Software Lab 2. Each lab focuses on different aspects of embedded systems development and hardware-software integration.
 
-## How It Works
-- Answer 10 questions by pressing one of four buttons
-- Your answers are classified using a decision tree model
-- Your house is revealed on an OLED display
+## Lab Assignments
 
-## Dataset
-Collected 30+ responses from students across all four houses.
+### Lab 1: Introduction to ESP32
+- Basic ESP32 setup and configuration
+- LED control and button input
+- Serial communication
 
-## Model
-Trained a decision tree using scikit-learn, converted it using micromlgen.
+### Lab 2: Sensor Integration
+- MPU6050 accelerometer/gyroscope integration
+- Data collection and processing
+- Real-time sensor data visualization
 
-## Hardware
-- ESP32 Dev Board
-- 4 Push Buttons
-- OLED 128x64 Display
+### Lab 3: Edge Computing
+- Edge Impulse integration
+- Machine learning model deployment
+- Real-time inference on ESP32
 
-## Improvements
-- Reduce number of questions based on feature importance
-- Add sound or haptics for feedback
-- Upgrade to voice input in future version
+### Lab 4: Gesture Recognition System
+- Complete gesture recognition system implementation
+- Data collection and processing
+- Machine learning model training and deployment
+- Real-time gesture recognition
 
-## Video Demo
-[Link or embed here]
+## Project Structure
+
+Each lab folder contains:
+```
+├── src/
+│   ├── sketches/               # Arduino sketches
+│   ├── python-scripts/         # Python scripts for data processing
+│   └── dataset/                # Collected data
+├── docs/
+│   └── report.pdf             # Lab report
+├── media/                     # Images and videos
+└── enclosure/                 # Hardware enclosure designs
+```
+
+## Setup Instructions
+
+### Prerequisites
+
+- Python 3.8 or higher
+- Arduino IDE
+- ESP32 development board
+- Required Python packages:
+  ```
+  pip install pyserial numpy pandas
+  ```
+
+### Installation
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/prunus77/TECHIN515-HW-Sw-Lab2.git
+   cd TECHIN515-HW-Sw-Lab2
+   ```
+
+2. Install Python dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Open the Arduino sketches in the respective lab's `src/sketches/` directory using Arduino IDE
+4. Install required Arduino libraries:
+   - ESP32 board support
+   - Edge Impulse Arduino library (for Lab 3 and 4)
+
+## Hardware Requirements
+
+- ESP32 development board
+- MPU6050 accelerometer/gyroscope (for Lab 2-4)
+- LED and button (for Lab 1)
+- Battery pack (3.7V LiPo recommended)
+- Enclosure materials (see respective lab's enclosure directory)
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details. 
