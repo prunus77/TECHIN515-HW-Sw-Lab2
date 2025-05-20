@@ -1,29 +1,64 @@
-# TECHIN 515 - Hardware and Software Lab 2
+# Magic Wand - Gesture Recognition with Edge Impulse and ESP32
 
-This repository contains the lab assignments for TECHIN 515 Hardware and Software Lab 2. Each lab focuses on different aspects of embedded systems development and hardware-software integration.
+This project implements a smart "Magic Wand" using an ESP32 microcontroller, an MPU6050 accelerometer, Edge Impulse ML inference, and NeoPixel LED feedback. When a user performs a predefined gesture (e.g., "O", "V", or "Z"), the system captures accelerometer data, classifies the gesture using an Edge Impulse model, sends the result to a local server via WiFi, and lights up the NeoPixel with a corresponding color.
 
-## Lab Assignments
+---
 
-### Lab 1: Introduction to ESP32
-- Basic ESP32 setup and configuration
-- LED control and button input
-- Serial communication
+## 📦 Features
 
-### Lab 2: Sensor Integration
-- MPU6050 accelerometer/gyroscope integration
-- Data collection and processing
-- Real-time sensor data visualization
+- **Gesture Capture** using MPU6050 IMU sensor
+- **Real-time Inference** with Edge Impulse
+- **Wireless Communication** to a local server via HTTP POST
+- **LED Feedback** using NeoPixel
+- **Physical Interaction** via button press
 
-### Lab 3: Edge Computing
-- Edge Impulse integration
-- Machine learning model deployment
-- Real-time inference on ESP32
+---
 
-### Lab 4: Gesture Recognition System
-- Complete gesture recognition system implementation
-- Data collection and processing
-- Machine learning model training and deployment
-- Real-time gesture recognition
+## 🔧 Hardware Requirements
+
+- ESP32 Dev Board (e.g., XIAO ESP32-C3)
+- MPU6050 Accelerometer/Gyroscope
+- NeoPixel LED (WS2812)
+- Pushbutton
+- Breadboard & Jumper wires
+- 3.3V Power Source or USB
+
+---
+
+## 🔌 Pin Connections
+
+| Component     | ESP32 Pin        |
+|---------------|------------------|
+| MPU6050 SDA   | GPIO 6 (or D4)   |
+| MPU6050 SCL   | GPIO 7 (or D5)   |
+| NeoPixel Data | GPIO 4 (D3)      |
+| Button        | GPIO 20 (D2)     |
+| VCC/GND       | 3.3V / GND       |
+
+---
+
+## 🧠 Gestures and LED Mapping
+
+| Gesture | LED Color |
+|---------|-----------|
+| `Z`     | 🔴 Red     |
+| `O`     | 🔵 Blue    |
+| `V`     | 🟢 Green   |
+
+---
+
+## 🌐 Server Integration
+
+Gesture results are sent as a JSON payload to a local HTTP server:
+
+### Example JSON Payload
+```json
+{
+  "student_id": "YOUR_UWNETID",
+  "gesture": "V",
+  "confidence": 97.45
+}
+```
 
 ## Project Structure
 
