@@ -46,10 +46,11 @@ Each lab folder contains:
 - Python 3.8 or higher
 - Arduino IDE
 - ESP32 development board
-- Required Python packages:
-  ```
-  pip install pyserial numpy pandas
-  ```
+
+Required Python packages:
+```bash
+pip install pyserial numpy pandas
+```
 
 ### Installation
 
@@ -65,12 +66,12 @@ Each lab folder contains:
    ```
 
 3. Open the Arduino sketches in the respective lab's `src/sketches/` directory using Arduino IDE
+
 4. Install required Arduino libraries:
    - ESP32 board support
    - Edge Impulse Arduino library (for Lab 3 and 4)
 
 ## Hardware Requirements
-
 - ESP32 development board
 - MPU6050 accelerometer/gyroscope (for Lab 2-4)
 - LED and button (for Lab 1)
@@ -78,5 +79,4 @@ Each lab folder contains:
 - Enclosure materials (see respective lab's enclosure directory)
 
 ## License
-
-This project is licensed under the MIT License - see the LICENSE file for details. 
+This project is licensed under the MIT License - see the LICENSE file for details.
